@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="BUS_CCustomer.cs" />
     <Compile Include="BUS_CDBConnect.cs" />
+    <Compile Include="BUS_Product.cs" />
     <Compile Include="BUS_USER.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

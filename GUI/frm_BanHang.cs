@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BUS;
 namespace GUI
 {
     public partial class frm_BanHang : Form
@@ -16,8 +16,13 @@ namespace GUI
         {
             InitializeComponent();
             this.loadBillID();
-         }
+            this.loadGrvProductSearch("");
+        }
 
+        public void loadGrvProductSearch(string key)
+        {
+            this.grv_products_search.DataSource = new BUS_Product().findProducts(key);
+        }
         private void timer_Tick(object sender, EventArgs e)
         {
             this.lb_current_datetime.Text =  DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss");
@@ -50,6 +55,12 @@ namespace GUI
         private void guna2DataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void txt_search_key_TextChanged(object sender, EventArgs e)
+        {
+            Console.WriteLine(this.txt_search_key.Text);
+            loadGrvProductSearch(this.txt_search_key.Text);
         }
     }
 }

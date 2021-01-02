@@ -49,6 +49,7 @@
     <Compile Include="DTO_CCustomer.cs" />
     <Compile Include="DTO_CLogIn.cs" />
     <Compile Include="DTO_CUser.cs" />
+    <Compile Include="DTO_Product.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

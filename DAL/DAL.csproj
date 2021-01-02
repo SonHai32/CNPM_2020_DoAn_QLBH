@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="DAL_CCustomer.cs" />
     <Compile Include="DAL_CDBConnect.cs" />
+    <Compile Include="DAL_Product.cs" />
     <Compile Include="DAL_User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
