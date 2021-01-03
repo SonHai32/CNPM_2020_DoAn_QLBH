@@ -33,6 +33,8 @@ namespace GUI
             String cash =  this.txt_cash_input.Text.ToString().Replace(",","").Trim() + ((Guna.UI2.WinForms.Guna2GradientTileButton)sender).Text.ToString();
             if (cash.Length > 9)
                 return;
+            if (int.Parse(cash) == 0)
+                return; 
             long money = long.Parse(cash);
             this.txt_cash_input.Text = String.Format("{0:#,##}", money); 
 
@@ -48,12 +50,18 @@ namespace GUI
             }
             String cash =  this.txt_cash_input.Text.ToString().Replace(",","");
             long money = long.Parse(cash.Substring(0, cash.Length-1));
-           this.txt_cash_input.Text = String.Format("{0:#,##}", money); 
+           this.txt_cash_input.Text = this.formatToCurrency(money.ToString()); 
         }
 
         private void txt_cash_input_TextChanged(object sender, EventArgs e)
         {
+
             this.lb_cus_cash.Text = this.txt_cash_input.Text.ToString();
+        }
+
+        private string formatToCurrency(string num)
+        {
+            return String.Format("{0:#,##}", num);
         }
     }
 }
