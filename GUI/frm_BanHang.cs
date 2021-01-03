@@ -179,5 +179,10 @@ namespace GUI
         {
             this.Dispose();
         }
+
+        private void btn_bill_Click(object sender, EventArgs e)
+        {
+            new frm_TinhTien().ShowDialog();
+        }
     }
 }

@@ -68,7 +68,7 @@
             this.btn_delete = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.btn_delete_all = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.btn_close = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.guna2GradientTileButton5 = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.btn_bill = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.txt_search_key = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
@@ -260,7 +260,7 @@
             this.flowLayoutPanel1.Controls.Add(this.btn_delete);
             this.flowLayoutPanel1.Controls.Add(this.btn_delete_all);
             this.flowLayoutPanel1.Controls.Add(this.btn_close);
-            this.flowLayoutPanel1.Controls.Add(this.guna2GradientTileButton5);
+            this.flowLayoutPanel1.Controls.Add(this.btn_bill);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 248);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -626,28 +626,29 @@
             this.btn_close.Text = "Đóng";
             this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
-            // guna2GradientTileButton5
+            // btn_bill
             // 
-            this.guna2GradientTileButton5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(233)))));
-            this.guna2GradientTileButton5.BorderRadius = 10;
-            this.guna2GradientTileButton5.BorderThickness = 1;
-            this.guna2GradientTileButton5.CheckedState.Parent = this.guna2GradientTileButton5;
-            this.guna2GradientTileButton5.CustomImages.Parent = this.guna2GradientTileButton5;
-            this.guna2GradientTileButton5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(239)))), ((int)(((byte)(196)))));
-            this.guna2GradientTileButton5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.guna2GradientTileButton5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientTileButton5.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientTileButton5.HoverState.Parent = this.guna2GradientTileButton5;
-            this.guna2GradientTileButton5.Image = global::GUI.Properties.Resources.receipt;
-            this.guna2GradientTileButton5.ImageOffset = new System.Drawing.Point(0, -10);
-            this.guna2GradientTileButton5.ImageSize = new System.Drawing.Size(48, 48);
-            this.guna2GradientTileButton5.Location = new System.Drawing.Point(315, 159);
-            this.guna2GradientTileButton5.Name = "guna2GradientTileButton5";
-            this.guna2GradientTileButton5.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(206)))), ((int)(((byte)(201)))));
-            this.guna2GradientTileButton5.ShadowDecoration.Parent = this.guna2GradientTileButton5;
-            this.guna2GradientTileButton5.Size = new System.Drawing.Size(150, 150);
-            this.guna2GradientTileButton5.TabIndex = 22;
-            this.guna2GradientTileButton5.Text = "Tính tiền";
+            this.btn_bill.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(233)))));
+            this.btn_bill.BorderRadius = 10;
+            this.btn_bill.BorderThickness = 1;
+            this.btn_bill.CheckedState.Parent = this.btn_bill;
+            this.btn_bill.CustomImages.Parent = this.btn_bill;
+            this.btn_bill.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(239)))), ((int)(((byte)(196)))));
+            this.btn_bill.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.btn_bill.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_bill.ForeColor = System.Drawing.Color.White;
+            this.btn_bill.HoverState.Parent = this.btn_bill;
+            this.btn_bill.Image = global::GUI.Properties.Resources.receipt;
+            this.btn_bill.ImageOffset = new System.Drawing.Point(0, -10);
+            this.btn_bill.ImageSize = new System.Drawing.Size(48, 48);
+            this.btn_bill.Location = new System.Drawing.Point(315, 159);
+            this.btn_bill.Name = "btn_bill";
+            this.btn_bill.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(206)))), ((int)(((byte)(201)))));
+            this.btn_bill.ShadowDecoration.Parent = this.btn_bill;
+            this.btn_bill.Size = new System.Drawing.Size(150, 150);
+            this.btn_bill.TabIndex = 22;
+            this.btn_bill.Text = "Tính tiền";
+            this.btn_bill.Click += new System.EventHandler(this.btn_bill_Click);
             // 
             // txt_search_key
             // 
@@ -741,7 +742,7 @@
         private Guna.UI2.WinForms.Guna2GradientTileButton btn_delete;
         private Guna.UI2.WinForms.Guna2GradientTileButton btn_close;
         private Guna.UI2.WinForms.Guna2GradientTileButton btn_delete_all;
-        private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton5;
+        private Guna.UI2.WinForms.Guna2GradientTileButton btn_bill;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2TextBox txt_aounnt_input;
