@@ -119,7 +119,7 @@ namespace GUI
 
         private void btn_sell_Click(object sender, EventArgs e)
         {
-            new frm_BanHang().ShowDialog();
+            new frm_BanHang(this.loginedUser).ShowDialog();
         }
     }
 }

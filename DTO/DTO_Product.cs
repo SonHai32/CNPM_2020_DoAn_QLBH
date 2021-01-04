@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace DTO
 {
 
-    class DTO_Product
+    public class DTO_Product
     {
         private string productID;
         private string productName;

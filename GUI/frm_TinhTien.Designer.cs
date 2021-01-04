@@ -53,7 +53,7 @@
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_pane = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_submit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -517,7 +517,7 @@
             // 
             // btn_pane
             // 
-            this.btn_pane.Controls.Add(this.guna2Button6);
+            this.btn_pane.Controls.Add(this.btn_submit);
             this.btn_pane.Controls.Add(this.guna2HtmlLabel9);
             this.btn_pane.Controls.Add(this.guna2HtmlLabel6);
             this.btn_pane.Controls.Add(this.guna2HtmlLabel3);
@@ -535,22 +535,22 @@
             this.btn_pane.Size = new System.Drawing.Size(1126, 168);
             this.btn_pane.TabIndex = 5;
             // 
-            // guna2Button6
+            // btn_submit
             // 
-            this.guna2Button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
-            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
-            this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(168)))));
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.HoverState.Parent = this.guna2Button6;
-            this.guna2Button6.Location = new System.Drawing.Point(769, 61);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
-            this.guna2Button6.Size = new System.Drawing.Size(239, 75);
-            this.guna2Button6.TabIndex = 3;
-            this.guna2Button6.TabStop = false;
-            this.guna2Button6.Text = "THANH TOÁN";
+            this.btn_submit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_submit.CheckedState.Parent = this.btn_submit;
+            this.btn_submit.CustomImages.Parent = this.btn_submit;
+            this.btn_submit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(168)))));
+            this.btn_submit.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_submit.ForeColor = System.Drawing.Color.White;
+            this.btn_submit.HoverState.Parent = this.btn_submit;
+            this.btn_submit.Location = new System.Drawing.Point(660, 58);
+            this.btn_submit.Name = "btn_submit";
+            this.btn_submit.ShadowDecoration.Parent = this.btn_submit;
+            this.btn_submit.Size = new System.Drawing.Size(434, 75);
+            this.btn_submit.TabIndex = 3;
+            this.btn_submit.TabStop = false;
+            this.btn_submit.Text = "THANH TOÁN VÀ IN HÓA ĐƠN";
             // 
             // guna2HtmlLabel9
             // 
@@ -754,7 +754,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private Guna.UI2.WinForms.Guna2Button btn_submit;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;

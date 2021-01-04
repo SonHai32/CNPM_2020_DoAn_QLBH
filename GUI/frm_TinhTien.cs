@@ -8,13 +8,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data;
+using BUS;
+using DTO;
 namespace GUI
 {
     public partial class frm_TinhTien : Form
     {
-        public frm_TinhTien()
+
+        private DTO_CUser currentUserLogin;
+        private DataTable tableProduct;
+        private String billID;
+        public frm_TinhTien(DTO_CUser currentUserLogin, DataTable tableProduct, String billID)
         {
+            this.currentUserLogin = currentUserLogin;
+            this.tableProduct = tableProduct;
+            this.billID = billID;
             InitializeComponent();
         }
 

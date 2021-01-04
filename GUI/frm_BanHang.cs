@@ -8,13 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
+using DTO;
 namespace GUI
 {
     public partial class frm_BanHang : Form
     {
         private DataTable tbProductBuy;
-        public frm_BanHang()
+        private DTO_CUser currentLoginUser;
+        public frm_BanHang(DTO_CUser currentLoginUser)
         {
+            this.currentLoginUser = currentLoginUser;
             InitializeComponent();
 
             this.loadBillID();
@@ -182,7 +185,10 @@ namespace GUI
 
         private void btn_bill_Click(object sender, EventArgs e)
         {
-            new frm_TinhTien().ShowDialog();
+            if( !(this.tbProductBuy.Rows.Count <= 0))
+            {
+                new frm_TinhTien(this.currentLoginUser, (DataTable) this.grv_product_buy.DataSource, this.lb_bill_id.Text.ToString()).ShowDialog();
+            }
         }
     }
 }
