@@ -119,7 +119,15 @@ namespace GUI
 
         private void btn_sell_Click(object sender, EventArgs e)
         {
-            new frm_BanHang(this.loginedUser).ShowDialog();
+            if (DTO_WorkShift.Status1)
+                new frm_BanHang(this.loginedUser).ShowDialog();
+            else
+                MessageBox.Show("Vui lòng mở ca trước khi bán hàng", "KHÔNG THỂ BÁN HÀNG", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void btn_open_work_shift_Click(object sender, EventArgs e)
+        {
+            new frm_ShiftControl().ShowDialog();
         }
     }
 }

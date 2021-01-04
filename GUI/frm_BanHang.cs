@@ -185,7 +185,8 @@ namespace GUI
 
         private void btn_bill_Click(object sender, EventArgs e)
         {
-            if( !(this.tbProductBuy.Rows.Count <= 0))
+            this.grv_product_buy.Refresh();
+            if( !(this.grv_product_buy.Rows.Count <= 0))
             {
                 new frm_TinhTien(this.currentLoginUser, (DataTable) this.grv_product_buy.DataSource, this.lb_bill_id.Text.ToString()).ShowDialog();
             }

@@ -38,6 +38,7 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.btn_cash = new Guna.UI2.WinForms.Guna2Button();
             this.input_pane = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_delete = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_7 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.btn_8 = new Guna.UI2.WinForms.Guna2GradientTileButton();
@@ -46,8 +47,10 @@
             this.btn_5 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.btn_6 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.btn_1 = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.btn_2 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.btn_3 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.btn_0 = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.btn_000 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.txt_cash_input = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -57,15 +60,12 @@
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lb_cash_back = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lb_cus_cash = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lb_total_price = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btn_2 = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.btn_000 = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.btn_delete = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.left_pane.SuspendLayout();
             this.input_pane.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -209,6 +209,25 @@
             this.input_pane.ShadowDecoration.Parent = this.input_pane;
             this.input_pane.Size = new System.Drawing.Size(1126, 378);
             this.input_pane.TabIndex = 4;
+            // 
+            // btn_delete
+            // 
+            this.btn_delete.CheckedState.Parent = this.btn_delete;
+            this.btn_delete.CustomImages.Parent = this.btn_delete;
+            this.btn_delete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(239)))), ((int)(((byte)(196)))));
+            this.btn_delete.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(206)))), ((int)(((byte)(201)))));
+            this.btn_delete.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delete.ForeColor = System.Drawing.Color.White;
+            this.btn_delete.HoverState.Parent = this.btn_delete;
+            this.btn_delete.Image = global::GUI.Properties.Resources.cancel;
+            this.btn_delete.ImageSize = new System.Drawing.Size(50, 50);
+            this.btn_delete.Location = new System.Drawing.Point(1014, 25);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.ShadowDecoration.Parent = this.btn_delete;
+            this.btn_delete.Size = new System.Drawing.Size(80, 338);
+            this.btn_delete.TabIndex = 9;
+            this.btn_delete.TabStop = false;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -355,6 +374,24 @@
             this.btn_1.Text = "1";
             this.btn_1.Click += new System.EventHandler(this.btn_numclick_Click);
             // 
+            // btn_2
+            // 
+            this.btn_2.CheckedState.Parent = this.btn_2;
+            this.btn_2.CustomImages.Parent = this.btn_2;
+            this.btn_2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(239)))), ((int)(((byte)(196)))));
+            this.btn_2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(206)))), ((int)(((byte)(201)))));
+            this.btn_2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_2.ForeColor = System.Drawing.Color.White;
+            this.btn_2.HoverState.Parent = this.btn_2;
+            this.btn_2.Location = new System.Drawing.Point(89, 175);
+            this.btn_2.Name = "btn_2";
+            this.btn_2.ShadowDecoration.Parent = this.btn_2;
+            this.btn_2.Size = new System.Drawing.Size(80, 80);
+            this.btn_2.TabIndex = 7;
+            this.btn_2.TabStop = false;
+            this.btn_2.Text = "2";
+            this.btn_2.Click += new System.EventHandler(this.btn_numclick_Click);
+            // 
             // btn_3
             // 
             this.btn_3.CheckedState.Parent = this.btn_3;
@@ -390,6 +427,24 @@
             this.btn_0.TabStop = false;
             this.btn_0.Text = "0";
             this.btn_0.Click += new System.EventHandler(this.btn_numclick_Click);
+            // 
+            // btn_000
+            // 
+            this.btn_000.CheckedState.Parent = this.btn_000;
+            this.btn_000.CustomImages.Parent = this.btn_000;
+            this.btn_000.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(239)))), ((int)(((byte)(196)))));
+            this.btn_000.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(206)))), ((int)(((byte)(201)))));
+            this.btn_000.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_000.ForeColor = System.Drawing.Color.White;
+            this.btn_000.HoverState.Parent = this.btn_000;
+            this.btn_000.Location = new System.Drawing.Point(89, 261);
+            this.btn_000.Name = "btn_000";
+            this.btn_000.ShadowDecoration.Parent = this.btn_000;
+            this.btn_000.Size = new System.Drawing.Size(166, 80);
+            this.btn_000.TabIndex = 10;
+            this.btn_000.TabStop = false;
+            this.btn_000.Text = "000";
+            this.btn_000.Click += new System.EventHandler(this.btn_numclick_Click);
             // 
             // txt_cash_input
             // 
@@ -521,11 +576,11 @@
             this.btn_pane.Controls.Add(this.guna2HtmlLabel9);
             this.btn_pane.Controls.Add(this.guna2HtmlLabel6);
             this.btn_pane.Controls.Add(this.guna2HtmlLabel3);
-            this.btn_pane.Controls.Add(this.guna2HtmlLabel8);
+            this.btn_pane.Controls.Add(this.lb_cash_back);
             this.btn_pane.Controls.Add(this.lb_cus_cash);
             this.btn_pane.Controls.Add(this.guna2HtmlLabel7);
             this.btn_pane.Controls.Add(this.guna2HtmlLabel4);
-            this.btn_pane.Controls.Add(this.guna2HtmlLabel2);
+            this.btn_pane.Controls.Add(this.lb_total_price);
             this.btn_pane.Controls.Add(this.guna2HtmlLabel1);
             this.btn_pane.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_pane.FillColor = System.Drawing.Color.White;
@@ -551,6 +606,7 @@
             this.btn_submit.TabIndex = 3;
             this.btn_submit.TabStop = false;
             this.btn_submit.Text = "THANH TOÁN VÀ IN HÓA ĐƠN";
+            this.btn_submit.Click += new System.EventHandler(this.btn_submit_Click);
             // 
             // guna2HtmlLabel9
             // 
@@ -582,16 +638,16 @@
             this.guna2HtmlLabel3.TabIndex = 0;
             this.guna2HtmlLabel3.Text = ": ";
             // 
-            // guna2HtmlLabel8
+            // lb_cash_back
             // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.Red;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(215, 126);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(15, 30);
-            this.guna2HtmlLabel8.TabIndex = 0;
-            this.guna2HtmlLabel8.Text = "0";
+            this.lb_cash_back.BackColor = System.Drawing.Color.Transparent;
+            this.lb_cash_back.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_cash_back.ForeColor = System.Drawing.Color.Red;
+            this.lb_cash_back.Location = new System.Drawing.Point(215, 126);
+            this.lb_cash_back.Name = "lb_cash_back";
+            this.lb_cash_back.Size = new System.Drawing.Size(15, 30);
+            this.lb_cash_back.TabIndex = 0;
+            this.lb_cash_back.Text = "0";
             // 
             // lb_cus_cash
             // 
@@ -624,16 +680,16 @@
             this.guna2HtmlLabel4.TabIndex = 0;
             this.guna2HtmlLabel4.Text = "Tiền khách đưa";
             // 
-            // guna2HtmlLabel2
+            // lb_total_price
             // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Red;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(215, 27);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(15, 30);
-            this.guna2HtmlLabel2.TabIndex = 0;
-            this.guna2HtmlLabel2.Text = "0";
+            this.lb_total_price.BackColor = System.Drawing.Color.Transparent;
+            this.lb_total_price.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_total_price.ForeColor = System.Drawing.Color.Red;
+            this.lb_total_price.Location = new System.Drawing.Point(215, 27);
+            this.lb_total_price.Name = "lb_total_price";
+            this.lb_total_price.Size = new System.Drawing.Size(15, 30);
+            this.lb_total_price.TabIndex = 0;
+            this.lb_total_price.Text = "0";
             // 
             // guna2HtmlLabel1
             // 
@@ -644,61 +700,6 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(121, 30);
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Tổng số tiền ";
-            // 
-            // btn_2
-            // 
-            this.btn_2.CheckedState.Parent = this.btn_2;
-            this.btn_2.CustomImages.Parent = this.btn_2;
-            this.btn_2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(239)))), ((int)(((byte)(196)))));
-            this.btn_2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(206)))), ((int)(((byte)(201)))));
-            this.btn_2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_2.ForeColor = System.Drawing.Color.White;
-            this.btn_2.HoverState.Parent = this.btn_2;
-            this.btn_2.Location = new System.Drawing.Point(89, 175);
-            this.btn_2.Name = "btn_2";
-            this.btn_2.ShadowDecoration.Parent = this.btn_2;
-            this.btn_2.Size = new System.Drawing.Size(80, 80);
-            this.btn_2.TabIndex = 7;
-            this.btn_2.TabStop = false;
-            this.btn_2.Text = "2";
-            this.btn_2.Click += new System.EventHandler(this.btn_numclick_Click);
-            // 
-            // btn_000
-            // 
-            this.btn_000.CheckedState.Parent = this.btn_000;
-            this.btn_000.CustomImages.Parent = this.btn_000;
-            this.btn_000.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(239)))), ((int)(((byte)(196)))));
-            this.btn_000.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(206)))), ((int)(((byte)(201)))));
-            this.btn_000.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_000.ForeColor = System.Drawing.Color.White;
-            this.btn_000.HoverState.Parent = this.btn_000;
-            this.btn_000.Location = new System.Drawing.Point(89, 261);
-            this.btn_000.Name = "btn_000";
-            this.btn_000.ShadowDecoration.Parent = this.btn_000;
-            this.btn_000.Size = new System.Drawing.Size(166, 80);
-            this.btn_000.TabIndex = 10;
-            this.btn_000.TabStop = false;
-            this.btn_000.Text = "000";
-            this.btn_000.Click += new System.EventHandler(this.btn_numclick_Click);
-            // 
-            // btn_delete
-            // 
-            this.btn_delete.CheckedState.Parent = this.btn_delete;
-            this.btn_delete.CustomImages.Parent = this.btn_delete;
-            this.btn_delete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(239)))), ((int)(((byte)(196)))));
-            this.btn_delete.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(206)))), ((int)(((byte)(201)))));
-            this.btn_delete.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delete.ForeColor = System.Drawing.Color.White;
-            this.btn_delete.HoverState.Parent = this.btn_delete;
-            this.btn_delete.Image = global::GUI.Properties.Resources.cancel;
-            this.btn_delete.ImageSize = new System.Drawing.Size(50, 50);
-            this.btn_delete.Location = new System.Drawing.Point(1014, 25);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.ShadowDecoration.Parent = this.btn_delete;
-            this.btn_delete.Size = new System.Drawing.Size(80, 338);
-            this.btn_delete.TabIndex = 9;
-            this.btn_delete.TabStop = false;
-            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // frm_TinhTien
             // 
@@ -752,11 +753,11 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_cus_cash;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lb_total_price;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Button btn_submit;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lb_cash_back;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2GradientTileButton btn_2;
         private Guna.UI2.WinForms.Guna2GradientTileButton btn_000;

@@ -11,6 +11,8 @@ using System.Windows.Forms;
 using System.Data;
 using BUS;
 using DTO;
+using CrystalDecisions.Shared;
+
 namespace GUI
 {
     public partial class frm_TinhTien : Form
@@ -25,6 +27,16 @@ namespace GUI
             this.tableProduct = tableProduct;
             this.billID = billID;
             InitializeComponent();
+            this.lb_total_price.Text = String.Format("{0:#,##}", this.loadTotalPrice());
+                }
+        private int loadTotalPrice()
+        {
+            int sum = 0;
+            foreach(DataRow row in this.tableProduct.Rows)
+            {
+                sum += int.Parse(row["THANHTIEN"].ToString());
+            }
+            return sum;
         }
 
         private void btnLogin2_Click(object sender, EventArgs e)
@@ -64,13 +76,41 @@ namespace GUI
 
         private void txt_cash_input_TextChanged(object sender, EventArgs e)
         {
-
             this.lb_cus_cash.Text = this.txt_cash_input.Text.ToString();
+            int cashBack = int.Parse(this.lb_cus_cash.Text.ToString().Replace(",", "").Trim()) - int.Parse(this.lb_total_price.Text.ToString().Replace(",", "").Trim());
+            this.lb_cash_back.Text = string.Format("{0:#,##}", cashBack);
         }
 
         private string formatToCurrency(string num)
         {
             return String.Format("{0:#,##}", num);
+        }
+
+        private void btn_submit_Click(object sender, EventArgs e)
+        {
+            if (int.Parse(this.lb_cus_cash.Text.ToString().Replace(",", "").Trim()) >= int.Parse(this.lb_total_price.Text.ToString().Replace(",", "").Trim()))
+            {
+                try
+                {
+                    bool success = false;
+                    DTO_Bill bill = new DTO_Bill(this.billID, this.currentUserLogin.MaNV, DateTime.Now, int.Parse(this.lb_total_price.Text.ToString().Replace(",", "").Trim()));
+                    success = new BUS_Bill().insertBill(bill);
+                    foreach (DataRow row in this.tableProduct.Rows)
+                    {
+                        DTO_BillDetail billDetail = new DTO_BillDetail(this.billID, row["MSMH"].ToString(), int.Parse(row["SOLUONG"].ToString()), int.Parse(row["THANHTIEN"].ToString()));
+                        new BUS_BillDetail().insertBillDetail(billDetail);
+                    }
+                    new frm_InHoaDon(this.billID).ShowDialog();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message.ToString());
+                }
+            }
+            else
+                MessageBox.Show("Nhận thiếu tiền", "Không thể thanh toán", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            
         }
     }
 }

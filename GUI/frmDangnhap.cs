@@ -20,6 +20,11 @@ namespace GUI
         //---------2.Khai báo lớp: GUI_CEnableMenu
         GUI_CEnableMenu mnu = new GUI_CEnableMenu();
 
+        public static string SV;
+        public static string DB;
+        public static string ID;
+        public static string PASS;
+
         public frmDangnhap()
         {
             InitializeComponent();
@@ -32,6 +37,10 @@ namespace GUI
                                            txtDatabase.Text.Trim(),
                                            txtUserID.Text.Trim(),
                                            txtPassword.Text.Trim());
+            SV = txtServername.Text.Trim();
+            DB = txtDatabase.Text.Trim();
+            ID = txtUserID.Text.Trim();
+            PASS = txtPassword.Text.Trim();
             //------Gọi hàm kết nối CSDL bên tầng BUS
             if (cn.DBConnect(lg) == true)
             {
