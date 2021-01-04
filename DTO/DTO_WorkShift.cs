@@ -8,33 +8,34 @@ namespace DTO
 {
     public class DTO_WorkShift
     {
-        private static int numOf500K = 0;
-        private static int numOf200K = 0;
-        private static int numOf100K = 0;
-        private static int numOf50K = 0;
-        private static int numOf20K = 0;
-        private static int numOf10K = 0;
-        private static int numOf5K = 0;
-        private static int numOf2K = 0;
-        private static int numOf1K = 0;
-        private static int numOf500 = 0;
-        private static bool status = false;
-        private static long money = 0;
+        private string workShiftID;
+        private string userID;
+        private DateTime dateWork;
+        private float beginAt;
+        private float endAt;
 
-     
+        public string WorkShiftID { get => workShiftID; set => workShiftID = value; }
+        public string UserID { get => userID; set => userID = value; }
+        public DateTime DateWork { get => dateWork; set => dateWork = value; }
+        public float BeginAt { get => beginAt; set => beginAt = value; }
+        public float EndAt { get => endAt; set => endAt = value; }
 
+        public DTO_WorkShift()
+        {
+            this.workShiftID = "";
+            this.userID = "";
+            this.beginAt = 0;
+            this.endAt = 0;
+            this.dateWork = DateTime.Now;
 
-        public static int NumOf500K { get => numOf500K; set => numOf500K = value; }
-        public static int NumOf200K { get => numOf200K; set => numOf200K = value; }
-        public static int NumOf100K { get => numOf100K; set => numOf100K = value; }
-        public static int NumOf50K { get => numOf50K; set => numOf50K = value; }
-        public static int NumOf20K { get => numOf20K; set => numOf20K = value; }
-        public static int NumOf10K { get => numOf10K; set => numOf10K = value; }
-        public static int NumOf5K { get => numOf5K; set => numOf5K = value; }
-        public static int NumOf2K { get => numOf2K; set => numOf2K = value; }
-        public static int NumOf1K { get => numOf1K; set => numOf1K = value; }
-        public static int NumOf500 { get => numOf500; set => numOf500 = value; }
-        public static bool Status1 { get => status; set => status = value; }
-        public static long Money { get => money; set => money = value; }
+        }
+        public DTO_WorkShift(string workShiftID, string userID, DateTime dateWork, float beginAt, float endAt)
+        {
+            this.WorkShiftID = workShiftID;
+            this.UserID = userID;
+            this.DateWork = dateWork;
+            this.BeginAt = beginAt;
+            this.EndAt = endAt;
+        }
     }
 }

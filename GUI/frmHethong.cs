@@ -23,6 +23,7 @@ namespace GUI
         BUS_CDBConnect cn = new BUS_CDBConnect();
 
         private DTO_CUser loginedUser;
+        public static string workShiftID = "";
         public frmHethong()
         {
 
@@ -119,7 +120,7 @@ namespace GUI
 
         private void btn_sell_Click(object sender, EventArgs e)
         {
-            if (DTO_WorkShift.Status1)
+            if (DTO_Money.Status1)
                 new frm_BanHang(this.loginedUser).ShowDialog();
             else
                 MessageBox.Show("Vui lòng mở ca trước khi bán hàng", "KHÔNG THỂ BÁN HÀNG", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -127,7 +128,12 @@ namespace GUI
 
         private void btn_open_work_shift_Click(object sender, EventArgs e)
         {
-            new frm_ShiftControl().ShowDialog();
+            new frm_ShiftControl(0, loginedUser).ShowDialog();
+        }
+
+        private void btn_close_work_shift_Click(object sender, EventArgs e)
+        {
+            new frm_ShiftControl(1, loginedUser).ShowDialog();
         }
     }
 }

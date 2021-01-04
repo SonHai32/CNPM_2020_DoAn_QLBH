@@ -32,8 +32,8 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.lb_header = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel29 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel30 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lb_chenh_lech_price = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lb_chenh_lech = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lb_total_price_input = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel28 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label1 = new System.Windows.Forms.Label();
@@ -98,8 +98,8 @@
             // 
             this.guna2Panel1.BorderRadius = 10;
             this.guna2Panel1.BorderThickness = 1;
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel29);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel30);
+            this.guna2Panel1.Controls.Add(this.lb_chenh_lech_price);
+            this.guna2Panel1.Controls.Add(this.lb_chenh_lech);
             this.guna2Panel1.Controls.Add(this.lb_total_price_input);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel28);
             this.guna2Panel1.Controls.Add(this.label1);
@@ -148,26 +148,26 @@
             this.guna2Panel1.Size = new System.Drawing.Size(779, 727);
             this.guna2Panel1.TabIndex = 9;
             // 
-            // guna2HtmlLabel29
+            // lb_chenh_lech_price
             // 
-            this.guna2HtmlLabel29.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel29.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel29.ForeColor = System.Drawing.Color.Red;
-            this.guna2HtmlLabel29.Location = new System.Drawing.Point(208, 627);
-            this.guna2HtmlLabel29.Name = "guna2HtmlLabel29";
-            this.guna2HtmlLabel29.Size = new System.Drawing.Size(14, 30);
-            this.guna2HtmlLabel29.TabIndex = 49;
-            this.guna2HtmlLabel29.Text = "0";
+            this.lb_chenh_lech_price.BackColor = System.Drawing.Color.Transparent;
+            this.lb_chenh_lech_price.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_chenh_lech_price.ForeColor = System.Drawing.Color.Red;
+            this.lb_chenh_lech_price.Location = new System.Drawing.Point(208, 627);
+            this.lb_chenh_lech_price.Name = "lb_chenh_lech_price";
+            this.lb_chenh_lech_price.Size = new System.Drawing.Size(14, 30);
+            this.lb_chenh_lech_price.TabIndex = 49;
+            this.lb_chenh_lech_price.Text = "0";
             // 
-            // guna2HtmlLabel30
+            // lb_chenh_lech
             // 
-            this.guna2HtmlLabel30.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel30.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel30.Location = new System.Drawing.Point(56, 627);
-            this.guna2HtmlLabel30.Name = "guna2HtmlLabel30";
-            this.guna2HtmlLabel30.Size = new System.Drawing.Size(110, 30);
-            this.guna2HtmlLabel30.TabIndex = 50;
-            this.guna2HtmlLabel30.Text = "Chênh lệch: ";
+            this.lb_chenh_lech.BackColor = System.Drawing.Color.Transparent;
+            this.lb_chenh_lech.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_chenh_lech.Location = new System.Drawing.Point(56, 627);
+            this.lb_chenh_lech.Name = "lb_chenh_lech";
+            this.lb_chenh_lech.Size = new System.Drawing.Size(110, 30);
+            this.lb_chenh_lech.TabIndex = 50;
+            this.lb_chenh_lech.Text = "Chênh lệch: ";
             // 
             // lb_total_price_input
             // 
@@ -200,7 +200,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(379, 54);
             this.label1.TabIndex = 47;
-            this.label1.Text = "Nhập tiền có trong két";
+            this.label1.Text = "Nhập tiền";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_submit
@@ -217,6 +217,7 @@
             this.btn_submit.Size = new System.Drawing.Size(180, 45);
             this.btn_submit.TabIndex = 46;
             this.btn_submit.Text = "Mở Ca";
+            this.btn_submit.Click += new System.EventHandler(this.btn_submit_Click);
             // 
             // txt_1K
             // 
@@ -846,7 +847,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private System.Windows.Forms.Label lb_header;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel29;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel30;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lb_chenh_lech_price;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lb_chenh_lech;
     }
 }
