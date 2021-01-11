@@ -27,11 +27,11 @@ namespace DAL
 
         public void updateWorkShiftTime(String workShiftID, float time)
         {
-String query = "UPDATE FROM CALAM SET GIOKT = @endAt WHERE MACL = @workShiftID";
+String query = "UPDATE CALAM SET GIOKT = @endAt WHERE MACL = @workShiftID";
             SqlCommand command = new SqlCommand(query, DAL_CDBConnect.myconn);
 
-            command.Parameters.Add("@endAt", SqlDbType.Float).Value = time;
-            command.Parameters.Add("@workShiftID", SqlDbType.Float).Value = workShiftID;
+            command.Parameters.Add("@endAt", SqlDbType.Float).Value = Math.Round(time, 2);
+            command.Parameters.Add("@workShiftID", SqlDbType.VarChar).Value = workShiftID;
 
             command.ExecuteNonQuery();
 
@@ -43,9 +43,9 @@ String query = "UPDATE FROM CALAM SET GIOKT = @endAt WHERE MACL = @workShiftID";
             string query = "INSERT INTO CT_CALAM values(@workShiftID, @money, @sales, @moneyOfEnd)";
             SqlCommand command = new SqlCommand(query, DAL_CDBConnect.myconn);
             command.Parameters.Add("@workShiftID", SqlDbType.VarChar).Value = workShiftID;
-            command.Parameters.Add("@money", SqlDbType.VarChar).Value = money;
-            command.Parameters.Add("@sales", SqlDbType.VarChar).Value = sales;
-            command.Parameters.Add("@moneyOfEnd", SqlDbType.VarChar).Value = moneyOfEnd;
+            command.Parameters.Add("@money", SqlDbType.Float).Value = money;
+            command.Parameters.Add("@sales", SqlDbType.Float).Value = sales;
+            command.Parameters.Add("@moneyOfEnd", SqlDbType.Float).Value = moneyOfEnd;
 
             command.ExecuteNonQuery();
         }

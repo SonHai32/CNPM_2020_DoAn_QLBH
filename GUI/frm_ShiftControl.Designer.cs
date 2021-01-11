@@ -245,6 +245,7 @@
             this.txt_1K.TabIndex = 38;
             this.txt_1K.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_1K.TextChanged += new System.EventHandler(this.textChange);
+            this.txt_1K.Leave += new System.EventHandler(this.text_leave);
             // 
             // txt_2K
             // 
@@ -272,6 +273,7 @@
             this.txt_2K.TabIndex = 40;
             this.txt_2K.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_2K.TextChanged += new System.EventHandler(this.textChange);
+            this.txt_2K.Leave += new System.EventHandler(this.text_leave);
             // 
             // txt_5K
             // 
@@ -299,6 +301,7 @@
             this.txt_5K.TabIndex = 41;
             this.txt_5K.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_5K.TextChanged += new System.EventHandler(this.textChange);
+            this.txt_5K.Leave += new System.EventHandler(this.text_leave);
             // 
             // txt_10K
             // 
@@ -326,6 +329,7 @@
             this.txt_10K.TabIndex = 42;
             this.txt_10K.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_10K.TextChanged += new System.EventHandler(this.textChange);
+            this.txt_10K.Leave += new System.EventHandler(this.text_leave);
             // 
             // txt_20K
             // 
@@ -353,6 +357,7 @@
             this.txt_20K.TabIndex = 43;
             this.txt_20K.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_20K.TextChanged += new System.EventHandler(this.textChange);
+            this.txt_20K.Leave += new System.EventHandler(this.text_leave);
             // 
             // txt_50K
             // 
@@ -380,6 +385,7 @@
             this.txt_50K.TabIndex = 44;
             this.txt_50K.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_50K.TextChanged += new System.EventHandler(this.textChange);
+            this.txt_50K.Leave += new System.EventHandler(this.text_leave);
             // 
             // txt_100K
             // 
@@ -407,6 +413,7 @@
             this.txt_100K.TabIndex = 39;
             this.txt_100K.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_100K.TextChanged += new System.EventHandler(this.textChange);
+            this.txt_100K.Leave += new System.EventHandler(this.text_leave);
             // 
             // txt_200K
             // 
@@ -434,6 +441,7 @@
             this.txt_200K.TabIndex = 45;
             this.txt_200K.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_200K.TextChanged += new System.EventHandler(this.textChange);
+            this.txt_200K.Leave += new System.EventHandler(this.text_leave);
             // 
             // guna2HtmlLabel27
             // 
@@ -749,6 +757,7 @@
             this.txt_500K.TabIndex = 13;
             this.txt_500K.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_500K.TextChanged += new System.EventHandler(this.textChange);
+            this.txt_500K.Leave += new System.EventHandler(this.text_leave);
             // 
             // guna2HtmlLabel3
             // 
@@ -795,7 +804,9 @@
             this.Controls.Add(this.lb_header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_ShiftControl";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_OpenShift";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);

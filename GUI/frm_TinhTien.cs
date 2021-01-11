@@ -100,6 +100,7 @@ namespace GUI
                         DTO_BillDetail billDetail = new DTO_BillDetail(this.billID, row["MSMH"].ToString(), int.Parse(row["SOLUONG"].ToString()), int.Parse(row["THANHTIEN"].ToString()));
                         new BUS_BillDetail().insertBillDetail(billDetail);
                     }
+                    DTO_Money.Sales = DTO_Money.Sales + int.Parse(this.lb_total_price.Text.ToString().Replace(",", "").Trim());
                     new frm_InHoaDon(this.billID).ShowDialog();
                 }
                 catch (Exception ex)
