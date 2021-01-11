@@ -74,6 +74,7 @@
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btn_Close = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,6 +97,8 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Panel1.AutoSize = true;
             this.guna2Panel1.BorderRadius = 10;
             this.guna2Panel1.BorderThickness = 1;
             this.guna2Panel1.Controls.Add(this.lb_chenh_lech_price);
@@ -103,6 +106,7 @@
             this.guna2Panel1.Controls.Add(this.lb_total_price_input);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel28);
             this.guna2Panel1.Controls.Add(this.label1);
+            this.guna2Panel1.Controls.Add(this.btn_Close);
             this.guna2Panel1.Controls.Add(this.btn_submit);
             this.guna2Panel1.Controls.Add(this.txt_1K);
             this.guna2Panel1.Controls.Add(this.txt_2K);
@@ -211,7 +215,7 @@
             this.btn_submit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_submit.ForeColor = System.Drawing.Color.White;
             this.btn_submit.HoverState.Parent = this.btn_submit;
-            this.btn_submit.Location = new System.Drawing.Point(290, 664);
+            this.btn_submit.Location = new System.Drawing.Point(191, 665);
             this.btn_submit.Name = "btn_submit";
             this.btn_submit.ShadowDecoration.Parent = this.btn_submit;
             this.btn_submit.Size = new System.Drawing.Size(180, 45);
@@ -795,6 +799,22 @@
             this.guna2HtmlLabel1.Text = "Mệnh giá";
             this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btn_Close
+            // 
+            this.btn_Close.CheckedState.Parent = this.btn_Close;
+            this.btn_Close.CustomImages.Parent = this.btn_Close;
+            this.btn_Close.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(121)))), ((int)(((byte)(168)))));
+            this.btn_Close.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Close.ForeColor = System.Drawing.Color.White;
+            this.btn_Close.HoverState.Parent = this.btn_Close;
+            this.btn_Close.Location = new System.Drawing.Point(394, 665);
+            this.btn_Close.Name = "btn_Close";
+            this.btn_Close.ShadowDecoration.Parent = this.btn_Close;
+            this.btn_Close.Size = new System.Drawing.Size(180, 45);
+            this.btn_Close.TabIndex = 46;
+            this.btn_Close.Text = "Đóng";
+            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
+            // 
             // frm_ShiftControl
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -810,6 +830,7 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -860,5 +881,6 @@
         private System.Windows.Forms.Label lb_header;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_chenh_lech_price;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_chenh_lech;
+        private Guna.UI2.WinForms.Guna2Button btn_Close;
     }
 }

@@ -157,5 +157,10 @@ namespace GUI
                 this.updateMoney();
             }
         }
+
+        private void btn_Close_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
