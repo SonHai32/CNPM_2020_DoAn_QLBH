@@ -133,7 +133,9 @@ namespace GUI
 
         private void btn_close_work_shift_Click(object sender, EventArgs e)
         {
-            new frm_ShiftControl(1, loginedUser).ShowDialog();
+            if(DTO_Money.Status1)
+                new frm_ShiftControl(1, loginedUser).ShowDialog();
+            MessageBox.Show("KHÔNG CÓ CA LÀM NÀO ĐƯỢC MỞ", "KHÔNG THỂ ĐÓNG CA !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }
