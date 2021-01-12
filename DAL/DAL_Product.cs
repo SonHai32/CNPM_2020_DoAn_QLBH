@@ -21,6 +21,9 @@ namespace DAL
             SqlDataAdapter sda = new SqlDataAdapter(command);
             sda.Fill(data);
 
+            sda.Dispose();
+            command.Dispose();
+
             return data;
         }
     }

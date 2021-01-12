@@ -31,6 +31,7 @@ namespace DAL
             }
            
             result.Close();
+            command.Dispose();
             return getUser;
         }
     }

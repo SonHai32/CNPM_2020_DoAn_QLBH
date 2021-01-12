@@ -24,6 +24,7 @@ namespace DAL
 
             success = command.ExecuteNonQuery() >= 0;
 
+            command.Dispose();
             return success;
         }
 
@@ -43,6 +44,8 @@ namespace DAL
             SqlDataAdapter sda = new SqlDataAdapter(command);
 
             sda.Fill(data);
+            sda.Dispose();
+            command.Dispose();
             return data;
         }
     }

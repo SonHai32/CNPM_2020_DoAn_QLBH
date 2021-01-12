@@ -23,6 +23,7 @@ namespace DAL
             command.Parameters.Add("@endAt", SqlDbType.Float).Value = workShift.EndAt;
 
             command.ExecuteNonQuery();
+            command.Dispose();
         }
 
         public void updateWorkShiftTime(String workShiftID, float time)
@@ -34,8 +35,7 @@ String query = "UPDATE CALAM SET GIOKT = @endAt WHERE MACL = @workShiftID";
             command.Parameters.Add("@workShiftID", SqlDbType.VarChar).Value = workShiftID;
 
             command.ExecuteNonQuery();
-
-
+            command.Dispose();
         }
 
         public void insertWorkShiftDetail(string workShiftID, long money, long sales, long moneyOfEnd)
@@ -48,6 +48,7 @@ String query = "UPDATE CALAM SET GIOKT = @endAt WHERE MACL = @workShiftID";
             command.Parameters.Add("@moneyOfEnd", SqlDbType.Float).Value = moneyOfEnd;
 
             command.ExecuteNonQuery();
+            command.Dispose();
         }
     }
 }

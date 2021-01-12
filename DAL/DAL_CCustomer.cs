@@ -22,10 +22,14 @@ namespace DAL
                 SqlCommand command = new SqlCommand(queryString, DAL_CDBConnect.myconn);
                 SqlDataAdapter sda = new SqlDataAdapter(command);
                 sda.Fill(cusList);
+
+                sda.Dispose();
+                command.Dispose(); 
                 return cusList;
             }catch(SqlException ex)
             {
                 MessageBox.Show(ex.Message.ToString());
+
                 return null;
             }
 
@@ -45,6 +49,8 @@ namespace DAL
 
                 bool success = command.ExecuteNonQuery() >= 0;
                 command.Parameters.Clear();
+
+                command.Dispose();
                 return success;
 
             }catch(SqlException ex)

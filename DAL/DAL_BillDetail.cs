@@ -21,6 +21,7 @@ namespace DAL
             command.Parameters.Add("@productAmount", SqlDbType.VarChar).Value = billDetail.ProductAmount;
             command.Parameters.Add("@totalPrice", SqlDbType.VarChar).Value = billDetail.ProductTotalPrice;
             success = command.ExecuteNonQuery() >= 0;
+            command.Dispose();
             return success;
         }
     }
