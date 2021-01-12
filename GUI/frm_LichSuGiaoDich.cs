@@ -69,5 +69,14 @@ namespace GUI
         {
             this.Dispose();
         }
+
+        private void btn_bill_detail_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine(this.grv_DonHang.CurrentCell.RowIndex);
+            if(this.grv_DonHang.CurrentCell.RowIndex >=0)
+            {
+                new frm_InHoaDon(this.grv_DonHang.Rows[this.grv_DonHang.CurrentCell.RowIndex].Cells["MSHD"].Value.ToString()).Show();
+            }
+        }
     }
 }
