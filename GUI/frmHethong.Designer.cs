@@ -112,7 +112,7 @@ namespace GUI
             this.btn_open_work_shift = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.btn_close_work_shift = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2GradientTileButton11 = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.guna2GradientTileButton14 = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.btn_transaction = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2GradientTileButton15 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -159,7 +159,7 @@ namespace GUI
             this.mnuTG});
             this.menuHethong.Location = new System.Drawing.Point(0, 0);
             this.menuHethong.Name = "menuHethong";
-            this.menuHethong.Size = new System.Drawing.Size(1096, 28);
+            this.menuHethong.Size = new System.Drawing.Size(1096, 30);
             this.menuHethong.TabIndex = 0;
             this.menuHethong.Text = "menuStrip1";
             // 
@@ -174,7 +174,7 @@ namespace GUI
             this.toolStripSeparator3,
             this.mnuThoat});
             this.mnuHT.Name = "mnuHT";
-            this.mnuHT.Size = new System.Drawing.Size(85, 24);
+            this.mnuHT.Size = new System.Drawing.Size(85, 26);
             this.mnuHT.Text = "Hệ thống";
             // 
             // mnuDN
@@ -225,7 +225,7 @@ namespace GUI
             this.mnuDMNV,
             this.mnuDMKH});
             this.mnuDM.Name = "mnuDM";
-            this.mnuDM.Size = new System.Drawing.Size(90, 24);
+            this.mnuDM.Size = new System.Drawing.Size(90, 26);
             this.mnuDM.Text = "Danh mục";
             // 
             // mnuDMMH
@@ -252,7 +252,7 @@ namespace GUI
             this.mnuHD.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuLHD});
             this.mnuHD.Name = "mnuHD";
-            this.mnuHD.Size = new System.Drawing.Size(81, 24);
+            this.mnuHD.Size = new System.Drawing.Size(81, 26);
             this.mnuHD.Text = "Hóa đơn";
             // 
             // mnuLHD
@@ -267,7 +267,7 @@ namespace GUI
             this.mnuInHD,
             this.mnuTKDT});
             this.mnuBC.Name = "mnuBC";
-            this.mnuBC.Size = new System.Drawing.Size(77, 24);
+            this.mnuBC.Size = new System.Drawing.Size(77, 26);
             this.mnuBC.Text = "Báo cáo";
             // 
             // mnuInHD
@@ -305,7 +305,7 @@ namespace GUI
             this.mnuTCKH,
             this.mnuTCHD});
             this.mnuTC.Name = "mnuTC";
-            this.mnuTC.Size = new System.Drawing.Size(71, 24);
+            this.mnuTC.Size = new System.Drawing.Size(71, 26);
             this.mnuTC.Text = "Tra cứu";
             // 
             // mnuTCMH
@@ -335,7 +335,7 @@ namespace GUI
             // mnuTG
             // 
             this.mnuTG.Name = "mnuTG";
-            this.mnuTG.Size = new System.Drawing.Size(78, 24);
+            this.mnuTG.Size = new System.Drawing.Size(78, 26);
             this.mnuTG.Text = "Trợ giúp";
             // 
             // guna2Elipse1
@@ -347,10 +347,10 @@ namespace GUI
             this.mainTabControl.Controls.Add(this.tabPageUserLogin);
             this.mainTabControl.Controls.Add(this.tabPageMain);
             this.mainTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainTabControl.Location = new System.Drawing.Point(0, 28);
+            this.mainTabControl.Location = new System.Drawing.Point(0, 30);
             this.mainTabControl.Name = "mainTabControl";
             this.mainTabControl.SelectedIndex = 0;
-            this.mainTabControl.Size = new System.Drawing.Size(1096, 682);
+            this.mainTabControl.Size = new System.Drawing.Size(1096, 680);
             this.mainTabControl.TabIndex = 2;
             this.mainTabControl.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mainTabControl_KeyPress);
             // 
@@ -360,7 +360,7 @@ namespace GUI
             this.tabPageUserLogin.Location = new System.Drawing.Point(4, 25);
             this.tabPageUserLogin.Name = "tabPageUserLogin";
             this.tabPageUserLogin.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageUserLogin.Size = new System.Drawing.Size(1088, 653);
+            this.tabPageUserLogin.Size = new System.Drawing.Size(1088, 651);
             this.tabPageUserLogin.TabIndex = 0;
             this.tabPageUserLogin.Text = "tabPageUserLogin";
             this.tabPageUserLogin.UseVisualStyleBackColor = true;
@@ -373,7 +373,7 @@ namespace GUI
             this.guna2GradientPanel1.Location = new System.Drawing.Point(3, 3);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(1082, 647);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(1082, 645);
             this.guna2GradientPanel1.TabIndex = 0;
             // 
             // guna2Panel1
@@ -384,7 +384,7 @@ namespace GUI
             this.guna2Panel1.Location = new System.Drawing.Point(0, 87);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1082, 560);
+            this.guna2Panel1.Size = new System.Drawing.Size(1082, 558);
             this.guna2Panel1.TabIndex = 2;
             // 
             // flowLayoutPanel1
@@ -719,7 +719,7 @@ namespace GUI
             this.tabPageMain.Location = new System.Drawing.Point(4, 25);
             this.tabPageMain.Name = "tabPageMain";
             this.tabPageMain.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageMain.Size = new System.Drawing.Size(1088, 653);
+            this.tabPageMain.Size = new System.Drawing.Size(1088, 651);
             this.tabPageMain.TabIndex = 1;
             this.tabPageMain.Text = "tabPageMain";
             this.tabPageMain.UseVisualStyleBackColor = true;
@@ -739,7 +739,7 @@ namespace GUI
             this.guna2Panel3.Location = new System.Drawing.Point(3, 3);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(1082, 647);
+            this.guna2Panel3.Size = new System.Drawing.Size(1082, 645);
             this.guna2Panel3.TabIndex = 3;
             // 
             // lb_user_id
@@ -792,7 +792,7 @@ namespace GUI
             this.flowLayoutPanel2.Controls.Add(this.btn_open_work_shift);
             this.flowLayoutPanel2.Controls.Add(this.btn_close_work_shift);
             this.flowLayoutPanel2.Controls.Add(this.guna2GradientTileButton11);
-            this.flowLayoutPanel2.Controls.Add(this.guna2GradientTileButton14);
+            this.flowLayoutPanel2.Controls.Add(this.btn_transaction);
             this.flowLayoutPanel2.Controls.Add(this.guna2GradientTileButton15);
             this.flowLayoutPanel2.Controls.Add(this.guna2ImageButton1);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(518, 222);
@@ -895,28 +895,29 @@ namespace GUI
             this.guna2GradientTileButton11.TabIndex = 4;
             this.guna2GradientTileButton11.Text = "Rút Tiền";
             // 
-            // guna2GradientTileButton14
+            // btn_transaction
             // 
-            this.guna2GradientTileButton14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(233)))));
-            this.guna2GradientTileButton14.BorderRadius = 10;
-            this.guna2GradientTileButton14.BorderThickness = 1;
-            this.guna2GradientTileButton14.CheckedState.Parent = this.guna2GradientTileButton14;
-            this.guna2GradientTileButton14.CustomImages.Parent = this.guna2GradientTileButton14;
-            this.guna2GradientTileButton14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(239)))), ((int)(((byte)(196)))));
-            this.guna2GradientTileButton14.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.guna2GradientTileButton14.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientTileButton14.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientTileButton14.HoverState.Parent = this.guna2GradientTileButton14;
-            this.guna2GradientTileButton14.Image = global::GUI.Properties.Resources.waiter;
-            this.guna2GradientTileButton14.ImageOffset = new System.Drawing.Point(0, -10);
-            this.guna2GradientTileButton14.ImageSize = new System.Drawing.Size(48, 48);
-            this.guna2GradientTileButton14.Location = new System.Drawing.Point(189, 189);
-            this.guna2GradientTileButton14.Name = "guna2GradientTileButton14";
-            this.guna2GradientTileButton14.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(206)))), ((int)(((byte)(201)))));
-            this.guna2GradientTileButton14.ShadowDecoration.Parent = this.guna2GradientTileButton14;
-            this.guna2GradientTileButton14.Size = new System.Drawing.Size(180, 180);
-            this.guna2GradientTileButton14.TabIndex = 7;
-            this.guna2GradientTileButton14.Text = "Lịch Sử GD";
+            this.btn_transaction.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(233)))));
+            this.btn_transaction.BorderRadius = 10;
+            this.btn_transaction.BorderThickness = 1;
+            this.btn_transaction.CheckedState.Parent = this.btn_transaction;
+            this.btn_transaction.CustomImages.Parent = this.btn_transaction;
+            this.btn_transaction.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(239)))), ((int)(((byte)(196)))));
+            this.btn_transaction.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.btn_transaction.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_transaction.ForeColor = System.Drawing.Color.White;
+            this.btn_transaction.HoverState.Parent = this.btn_transaction;
+            this.btn_transaction.Image = global::GUI.Properties.Resources.waiter;
+            this.btn_transaction.ImageOffset = new System.Drawing.Point(0, -10);
+            this.btn_transaction.ImageSize = new System.Drawing.Size(48, 48);
+            this.btn_transaction.Location = new System.Drawing.Point(189, 189);
+            this.btn_transaction.Name = "btn_transaction";
+            this.btn_transaction.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(206)))), ((int)(((byte)(201)))));
+            this.btn_transaction.ShadowDecoration.Parent = this.btn_transaction;
+            this.btn_transaction.Size = new System.Drawing.Size(180, 180);
+            this.btn_transaction.TabIndex = 7;
+            this.btn_transaction.Text = "Lịch Sử GD";
+            this.btn_transaction.Click += new System.EventHandler(this.btn_transaction_Click);
             // 
             // guna2GradientTileButton15
             // 
@@ -1077,7 +1078,7 @@ namespace GUI
         private Guna.UI2.WinForms.Guna2GradientTileButton btn_open_work_shift;
         private Guna.UI2.WinForms.Guna2GradientTileButton btn_close_work_shift;
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton11;
-        private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton14;
+        private Guna.UI2.WinForms.Guna2GradientTileButton btn_transaction;
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton15;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;

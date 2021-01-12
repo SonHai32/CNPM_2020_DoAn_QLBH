@@ -9,7 +9,7 @@ using System.Data.Sql;
 using System.Data.SqlClient;
 namespace DAL
 {
-    
+
     public class DAL_Bill
     {
         public bool insertBill(DTO_Bill bill)
@@ -26,5 +26,25 @@ namespace DAL
 
             return success;
         }
+
+        public DataTable getBill(String searchValue, String start, String end)
+        {
+            DataTable data = new DataTable();
+            String query = "pr_timHoaDon";
+            SqlCommand command = new SqlCommand(query, DAL_CDBConnect.myconn);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.Add("@value", SqlDbType.NVarChar).Value = searchValue;
+            if(start != null && end != null)
+            {
+                command.Parameters.Add("@ngayBatDau", SqlDbType.Date).Value = start;
+                command.Parameters.Add("@ngayKetThuc", SqlDbType.Date).Value = end;
+            }
+
+            SqlDataAdapter sda = new SqlDataAdapter(command);
+
+            sda.Fill(data);
+            return data;
+        }
     }
+
 }

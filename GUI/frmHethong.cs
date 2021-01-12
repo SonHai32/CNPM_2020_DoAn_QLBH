@@ -137,5 +137,10 @@ namespace GUI
                 new frm_ShiftControl(1, loginedUser).ShowDialog();
             MessageBox.Show("KHÔNG CÓ CA LÀM NÀO ĐƯỢC MỞ", "KHÔNG THỂ ĐÓNG CA !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        private void btn_transaction_Click(object sender, EventArgs e)
+        {
+            new frm_LichSuGiaoDich().ShowDialog();
+        }
     }
 }
