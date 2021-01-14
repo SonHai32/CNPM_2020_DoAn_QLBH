@@ -159,7 +159,7 @@ namespace GUI
             this.mnuTG});
             this.menuHethong.Location = new System.Drawing.Point(0, 0);
             this.menuHethong.Name = "menuHethong";
-            this.menuHethong.Size = new System.Drawing.Size(1096, 30);
+            this.menuHethong.Size = new System.Drawing.Size(1096, 28);
             this.menuHethong.TabIndex = 0;
             this.menuHethong.Text = "menuStrip1";
             // 
@@ -174,7 +174,7 @@ namespace GUI
             this.toolStripSeparator3,
             this.mnuThoat});
             this.mnuHT.Name = "mnuHT";
-            this.mnuHT.Size = new System.Drawing.Size(85, 26);
+            this.mnuHT.Size = new System.Drawing.Size(85, 24);
             this.mnuHT.Text = "Hệ thống";
             // 
             // mnuDN
@@ -225,25 +225,26 @@ namespace GUI
             this.mnuDMNV,
             this.mnuDMKH});
             this.mnuDM.Name = "mnuDM";
-            this.mnuDM.Size = new System.Drawing.Size(90, 26);
+            this.mnuDM.Size = new System.Drawing.Size(90, 24);
             this.mnuDM.Text = "Danh mục";
             // 
             // mnuDMMH
             // 
             this.mnuDMMH.Name = "mnuDMMH";
-            this.mnuDMMH.Size = new System.Drawing.Size(169, 26);
+            this.mnuDMMH.Size = new System.Drawing.Size(224, 26);
             this.mnuDMMH.Text = "Mặt hàng";
+            this.mnuDMMH.Click += new System.EventHandler(this.mnuDMMH_Click);
             // 
             // mnuDMNV
             // 
             this.mnuDMNV.Name = "mnuDMNV";
-            this.mnuDMNV.Size = new System.Drawing.Size(169, 26);
+            this.mnuDMNV.Size = new System.Drawing.Size(224, 26);
             this.mnuDMNV.Text = "Nhân viên";
             // 
             // mnuDMKH
             // 
             this.mnuDMKH.Name = "mnuDMKH";
-            this.mnuDMKH.Size = new System.Drawing.Size(169, 26);
+            this.mnuDMKH.Size = new System.Drawing.Size(224, 26);
             this.mnuDMKH.Text = "Khách hàng";
             this.mnuDMKH.Click += new System.EventHandler(this.mnuDMKH_Click);
             // 
@@ -252,7 +253,7 @@ namespace GUI
             this.mnuHD.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuLHD});
             this.mnuHD.Name = "mnuHD";
-            this.mnuHD.Size = new System.Drawing.Size(81, 26);
+            this.mnuHD.Size = new System.Drawing.Size(81, 24);
             this.mnuHD.Text = "Hóa đơn";
             // 
             // mnuLHD
@@ -267,7 +268,7 @@ namespace GUI
             this.mnuInHD,
             this.mnuTKDT});
             this.mnuBC.Name = "mnuBC";
-            this.mnuBC.Size = new System.Drawing.Size(77, 26);
+            this.mnuBC.Size = new System.Drawing.Size(77, 24);
             this.mnuBC.Text = "Báo cáo";
             // 
             // mnuInHD
@@ -305,7 +306,7 @@ namespace GUI
             this.mnuTCKH,
             this.mnuTCHD});
             this.mnuTC.Name = "mnuTC";
-            this.mnuTC.Size = new System.Drawing.Size(71, 26);
+            this.mnuTC.Size = new System.Drawing.Size(71, 24);
             this.mnuTC.Text = "Tra cứu";
             // 
             // mnuTCMH
@@ -335,7 +336,7 @@ namespace GUI
             // mnuTG
             // 
             this.mnuTG.Name = "mnuTG";
-            this.mnuTG.Size = new System.Drawing.Size(78, 26);
+            this.mnuTG.Size = new System.Drawing.Size(78, 24);
             this.mnuTG.Text = "Trợ giúp";
             // 
             // guna2Elipse1
@@ -347,10 +348,10 @@ namespace GUI
             this.mainTabControl.Controls.Add(this.tabPageUserLogin);
             this.mainTabControl.Controls.Add(this.tabPageMain);
             this.mainTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainTabControl.Location = new System.Drawing.Point(0, 30);
+            this.mainTabControl.Location = new System.Drawing.Point(0, 28);
             this.mainTabControl.Name = "mainTabControl";
             this.mainTabControl.SelectedIndex = 0;
-            this.mainTabControl.Size = new System.Drawing.Size(1096, 680);
+            this.mainTabControl.Size = new System.Drawing.Size(1096, 682);
             this.mainTabControl.TabIndex = 2;
             this.mainTabControl.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mainTabControl_KeyPress);
             // 
@@ -360,7 +361,7 @@ namespace GUI
             this.tabPageUserLogin.Location = new System.Drawing.Point(4, 25);
             this.tabPageUserLogin.Name = "tabPageUserLogin";
             this.tabPageUserLogin.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageUserLogin.Size = new System.Drawing.Size(1088, 651);
+            this.tabPageUserLogin.Size = new System.Drawing.Size(1088, 653);
             this.tabPageUserLogin.TabIndex = 0;
             this.tabPageUserLogin.Text = "tabPageUserLogin";
             this.tabPageUserLogin.UseVisualStyleBackColor = true;
@@ -373,7 +374,7 @@ namespace GUI
             this.guna2GradientPanel1.Location = new System.Drawing.Point(3, 3);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(1082, 645);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(1082, 647);
             this.guna2GradientPanel1.TabIndex = 0;
             // 
             // guna2Panel1
@@ -384,7 +385,7 @@ namespace GUI
             this.guna2Panel1.Location = new System.Drawing.Point(0, 87);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1082, 558);
+            this.guna2Panel1.Size = new System.Drawing.Size(1082, 560);
             this.guna2Panel1.TabIndex = 2;
             // 
             // flowLayoutPanel1
@@ -719,7 +720,7 @@ namespace GUI
             this.tabPageMain.Location = new System.Drawing.Point(4, 25);
             this.tabPageMain.Name = "tabPageMain";
             this.tabPageMain.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageMain.Size = new System.Drawing.Size(1088, 651);
+            this.tabPageMain.Size = new System.Drawing.Size(1088, 653);
             this.tabPageMain.TabIndex = 1;
             this.tabPageMain.Text = "tabPageMain";
             this.tabPageMain.UseVisualStyleBackColor = true;
@@ -739,7 +740,7 @@ namespace GUI
             this.guna2Panel3.Location = new System.Drawing.Point(3, 3);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(1082, 645);
+            this.guna2Panel3.Size = new System.Drawing.Size(1082, 647);
             this.guna2Panel3.TabIndex = 3;
             // 
             // lb_user_id

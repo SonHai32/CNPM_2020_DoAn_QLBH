@@ -142,5 +142,10 @@ namespace GUI
         {
             new frm_LichSuGiaoDich().ShowDialog();
         }
+
+        private void mnuDMMH_Click(object sender, EventArgs e)
+        {
+            new frm_MatHang().Show();
+        }
     }
 }
