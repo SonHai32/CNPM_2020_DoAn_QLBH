@@ -15,5 +15,19 @@ namespace BUS
         {
             return new DAL_Product().findProduct(key);
         }
+
+        public bool insertProduct(DTO_Product product)
+        {
+            return new DAL_Product().insertProduct(product);
+        }
+        public bool updateProduct(DTO_Product product)
+        {
+            return new DAL_Product().updateProduct(product);
+        }
+
+        public bool deleteProduct(String productID)
+        {
+            return new DAL_Product().deleteProduct(productID);
+        }
     }
 }

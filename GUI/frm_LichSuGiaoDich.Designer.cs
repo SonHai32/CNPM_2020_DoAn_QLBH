@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.lb_header = new System.Windows.Forms.Label();
             this.pane_control = new Guna.UI2.WinForms.Guna2Panel();
@@ -40,7 +41,6 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dayEnd = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dayStart = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.txt_search_key = new Guna.UI2.WinForms.Guna2TextBox();
             this.grv_DonHang = new Guna.UI2.WinForms.Guna2DataGridView();
             this.MSHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MANV = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,6 +52,7 @@
             this.grv_pane = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_bill_detail = new Guna.UI2.WinForms.Guna2Button();
             this.btn_close = new Guna.UI2.WinForms.Guna2Button();
+            this.txt_search_key = new Guna.UI2.WinForms.Guna2TextBox();
             this.pane_control.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grv_DonHang)).BeginInit();
             this.grv_pane.SuspendLayout();
@@ -166,56 +167,26 @@
             this.dayStart.Value = new System.DateTime(2021, 1, 12, 2, 50, 31, 193);
             this.dayStart.ValueChanged += new System.EventHandler(this.dateValueChanged);
             // 
-            // txt_search_key
-            // 
-            this.txt_search_key.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_search_key.DefaultText = "";
-            this.txt_search_key.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_search_key.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_search_key.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_search_key.DisabledState.Parent = this.txt_search_key;
-            this.txt_search_key.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_search_key.Dock = System.Windows.Forms.DockStyle.Left;
-            this.txt_search_key.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_search_key.FocusedState.Parent = this.txt_search_key;
-            this.txt_search_key.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_search_key.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_search_key.HoverState.Parent = this.txt_search_key;
-            this.txt_search_key.IconLeft = global::GUI.Properties.Resources.magnifying_glass;
-            this.txt_search_key.IconLeftSize = new System.Drawing.Size(40, 40);
-            this.txt_search_key.Location = new System.Drawing.Point(0, 0);
-            this.txt_search_key.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.txt_search_key.Name = "txt_search_key";
-            this.txt_search_key.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.txt_search_key.PasswordChar = '\0';
-            this.txt_search_key.PlaceholderText = "Nội dung tìm kiếm(Mã HD, Giá tiền...)";
-            this.txt_search_key.SelectedText = "";
-            this.txt_search_key.ShadowDecoration.Parent = this.txt_search_key;
-            this.txt_search_key.Size = new System.Drawing.Size(457, 74);
-            this.txt_search_key.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_search_key.TabIndex = 3;
-            this.txt_search_key.TextChanged += new System.EventHandler(this.txt_search_key_TextChanged);
-            // 
             // grv_DonHang
             // 
             this.grv_DonHang.AllowUserToAddRows = false;
             this.grv_DonHang.AllowUserToDeleteRows = false;
             this.grv_DonHang.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.grv_DonHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.grv_DonHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.grv_DonHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grv_DonHang.BackgroundColor = System.Drawing.Color.White;
             this.grv_DonHang.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.grv_DonHang.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.grv_DonHang.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.grv_DonHang.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grv_DonHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grv_DonHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.grv_DonHang.ColumnHeadersHeight = 40;
             this.grv_DonHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MSHD,
@@ -223,14 +194,14 @@
             this.TENNV,
             this.NGAYHD,
             this.TONGTIEN});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grv_DonHang.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grv_DonHang.DefaultCellStyle = dataGridViewCellStyle4;
             this.grv_DonHang.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grv_DonHang.EnableHeadersVisualStyles = false;
             this.grv_DonHang.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -303,6 +274,10 @@
             // TONGTIEN
             // 
             this.TONGTIEN.DataPropertyName = "TONGTIEN";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle3.Format = "#,## VND";
+            dataGridViewCellStyle3.NullValue = null;
+            this.TONGTIEN.DefaultCellStyle = dataGridViewCellStyle3;
             this.TONGTIEN.HeaderText = "Tổng tiền";
             this.TONGTIEN.MinimumWidth = 6;
             this.TONGTIEN.Name = "TONGTIEN";
@@ -367,6 +342,36 @@
             this.btn_close.Text = "Đóng";
             this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
+            // txt_search_key
+            // 
+            this.txt_search_key.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_search_key.DefaultText = "";
+            this.txt_search_key.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_search_key.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_search_key.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_search_key.DisabledState.Parent = this.txt_search_key;
+            this.txt_search_key.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_search_key.Dock = System.Windows.Forms.DockStyle.Left;
+            this.txt_search_key.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_search_key.FocusedState.Parent = this.txt_search_key;
+            this.txt_search_key.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_search_key.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_search_key.HoverState.Parent = this.txt_search_key;
+            this.txt_search_key.IconLeft = global::GUI.Properties.Resources.magnifying_glass;
+            this.txt_search_key.IconLeftSize = new System.Drawing.Size(40, 40);
+            this.txt_search_key.Location = new System.Drawing.Point(0, 0);
+            this.txt_search_key.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.txt_search_key.Name = "txt_search_key";
+            this.txt_search_key.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.txt_search_key.PasswordChar = '\0';
+            this.txt_search_key.PlaceholderText = "Nội dung tìm kiếm(Mã HD, Giá tiền...)";
+            this.txt_search_key.SelectedText = "";
+            this.txt_search_key.ShadowDecoration.Parent = this.txt_search_key;
+            this.txt_search_key.Size = new System.Drawing.Size(457, 74);
+            this.txt_search_key.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txt_search_key.TabIndex = 3;
+            this.txt_search_key.TextChanged += new System.EventHandler(this.txt_search_key_TextChanged);
+            // 
             // frm_LichSuGiaoDich
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -382,6 +387,7 @@
             this.Name = "frm_LichSuGiaoDich";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "d";
+            this.Load += new System.EventHandler(this.frm_LichSuGiaoDich_Load);
             this.pane_control.ResumeLayout(false);
             this.pane_control.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grv_DonHang)).EndInit();
@@ -400,11 +406,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2DateTimePicker dayStart;
         private Guna.UI2.WinForms.Guna2TextBox txt_search_key;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MSHD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MANV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TENNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NGAYHD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TONGTIEN;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2CheckBox check_Date;
@@ -412,5 +413,10 @@
         private Guna.UI2.WinForms.Guna2Panel grv_pane;
         private Guna.UI2.WinForms.Guna2Button btn_close;
         private Guna.UI2.WinForms.Guna2Button btn_bill_detail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MSHD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MANV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TENNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NGAYHD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TONGTIEN;
     }
 }

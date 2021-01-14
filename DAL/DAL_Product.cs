@@ -26,5 +26,48 @@ namespace DAL
 
             return data;
         }
+
+        public bool insertProduct(DTO_Product product)
+        {
+            String query = "INSERT INTO MATHANG VALUES(@productID, @productName, @productAmount, @productPrice, @productUnit)";
+            SqlCommand command = new SqlCommand(query, DAL_CDBConnect.myconn);
+
+            command.Parameters.Add("@productID", SqlDbType.Char).Value = product.ProductID;
+            command.Parameters.Add("@productName", SqlDbType.NVarChar).Value = product.ProductName;
+            command.Parameters.Add("@productAmount", SqlDbType.Int).Value = product.ProductAmount;
+            command.Parameters.Add("@productPrice", SqlDbType.Float).Value = product.ProductPrice;
+            command.Parameters.Add("@productUnit", SqlDbType.NVarChar).Value = product.ProductUnit;
+
+            bool success = command.ExecuteNonQuery() >= 0;
+            command.Dispose();
+            return success;
+        }
+            public bool updateProduct(DTO_Product product)
+        {
+            String query = "UPDATE MATHANG SET TENMH = @productName, SL_TON = @productAmount, DONVITINH = @productUnit, DONGIA = @productPrice WHERE MSMH = @productID";
+            SqlCommand command = new SqlCommand(query, DAL_CDBConnect.myconn);
+
+            command.Parameters.Add("@productID", SqlDbType.Char).Value = product.ProductID;
+            command.Parameters.Add("@productName", SqlDbType.NVarChar).Value = product.ProductName;
+            command.Parameters.Add("@productAmount", SqlDbType.Int).Value = product.ProductAmount;
+            command.Parameters.Add("@productPrice", SqlDbType.Float).Value = product.ProductPrice;
+            command.Parameters.Add("@productUnit", SqlDbType.NVarChar).Value = product.ProductUnit;
+
+            bool success = command.ExecuteNonQuery() >= 0;
+            command.Dispose();
+            return success;
+        }
+
+        public bool deleteProduct(String productID)
+        {
+            String query = "pr_deleteProduct";
+            SqlCommand command = new SqlCommand(query, DAL_CDBConnect.myconn);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.Add("@productID", SqlDbType.VarChar).Value = productID;
+
+            bool success = command.ExecuteNonQuery() >= 0;
+            command.Dispose();
+            return success;
+        }
     }
 }

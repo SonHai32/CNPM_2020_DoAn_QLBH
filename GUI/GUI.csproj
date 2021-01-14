@@ -95,6 +95,12 @@
     <Compile Include="frm_LichSuGiaoDich.Designer.cs">
       <DependentUpon>frm_LichSuGiaoDich.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_MatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MatHang.Designer.cs">
+      <DependentUpon>frm_MatHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_ShiftControl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_LichSuGiaoDich.resx">
       <DependentUpon>frm_LichSuGiaoDich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MatHang.resx">
+      <DependentUpon>frm_MatHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ShiftControl.resx">
       <DependentUpon>frm_ShiftControl.cs</DependentUpon>
@@ -221,6 +230,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_math_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_bin_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil_drawing_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear_symbol_64px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

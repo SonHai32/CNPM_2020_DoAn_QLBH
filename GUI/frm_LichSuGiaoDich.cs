@@ -78,5 +78,10 @@ namespace GUI
                 new frm_InHoaDon(this.grv_DonHang.Rows[this.grv_DonHang.CurrentCell.RowIndex].Cells["MSHD"].Value.ToString()).Show();
             }
         }
+
+        private void frm_LichSuGiaoDich_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
