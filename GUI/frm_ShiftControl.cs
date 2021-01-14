@@ -92,6 +92,7 @@ namespace GUI
         {
             if(option == 0)
             {
+                /// Thêm mới ca làm
                 DTO.DTO_WorkShift workShift = new DTO.DTO_WorkShift("CL-" + new DateTimeOffset(DateTime.UtcNow).ToUnixTimeMilliseconds().ToString(), loginedUser.MaNV, DateTime.Now, float.Parse(DateTime.Now.Hour.ToString() + "." + DateTime.Now.Minute.ToString()), 0);
                 try
                 {
@@ -126,7 +127,6 @@ namespace GUI
                 }
 
             }else if(option ==1){
-                DTO.DTO_Money.Status1 = false;
                 long sales = DTO.DTO_Money.Sales + DTO.DTO_Money.Money;
                 long chenhLech = long.Parse(this.lb_chenh_lech_price.Text.ToString().Replace(",", "").Trim());
 
@@ -137,8 +137,12 @@ namespace GUI
                     new BUS.BUS_WorkShift().updateWorkShift(frmHethong.workShiftID, float.Parse(hour));
                     new BUS.BUS_WorkShift().insertWorkShiftDetail(frmHethong.workShiftID, DTO.DTO_Money.Money, DTO.DTO_Money.Sales, chenhLech);
                     DialogResult result =  MessageBox.Show("Đóng CA THÀNH CÔNG", "THÀNH CÔNG", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DTO.DTO_Money.Status1 = false;
                     if (result == DialogResult.OK)
-                            this.Dispose();
+                        this.Dispose();
+                    else
+                        this.Dispose();
+                  
                 }
                 catch(Exception ex)
                 {
