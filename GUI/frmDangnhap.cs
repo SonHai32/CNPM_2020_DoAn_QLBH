@@ -48,5 +48,16 @@ namespace GUI
                 this.Close(); //------------Đóng màn hình đăng nhập
             }
         }
+
+        private void btThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void frmDangnhap_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (cn.getConnection() == null)
+                Application.Exit();
+        }
     }
 }

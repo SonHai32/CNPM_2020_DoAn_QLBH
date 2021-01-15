@@ -231,20 +231,20 @@ namespace GUI
             // mnuDMMH
             // 
             this.mnuDMMH.Name = "mnuDMMH";
-            this.mnuDMMH.Size = new System.Drawing.Size(224, 26);
+            this.mnuDMMH.Size = new System.Drawing.Size(169, 26);
             this.mnuDMMH.Text = "Mặt hàng";
             this.mnuDMMH.Click += new System.EventHandler(this.mnuDMMH_Click);
             // 
             // mnuDMNV
             // 
             this.mnuDMNV.Name = "mnuDMNV";
-            this.mnuDMNV.Size = new System.Drawing.Size(224, 26);
+            this.mnuDMNV.Size = new System.Drawing.Size(169, 26);
             this.mnuDMNV.Text = "Nhân viên";
             // 
             // mnuDMKH
             // 
             this.mnuDMKH.Name = "mnuDMKH";
-            this.mnuDMKH.Size = new System.Drawing.Size(224, 26);
+            this.mnuDMKH.Size = new System.Drawing.Size(169, 26);
             this.mnuDMKH.Text = "Khách hàng";
             this.mnuDMKH.Click += new System.EventHandler(this.mnuDMKH_Click);
             // 
@@ -997,7 +997,6 @@ namespace GUI
             this.Name = "frmHethong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hệ thống quản lý bán hàng";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmHethong_Load);
             this.menuHethong.ResumeLayout(false);
             this.menuHethong.PerformLayout();
